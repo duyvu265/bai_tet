@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>baitvn</title>
+</head>
+<body>
+
+ <img src="ve-con-meo-chibi-cute-cach-ve-1001-hinh-ve-don-gian-dep_16.jpg"  id='demo'
+                                                                                                           style="width: 220px;
+     height: 150px;
+     border-radius: 50%;
+     position: absolute;
+     left: 50px;
+     top: 0px;
+"
+/>
+<script>
+    let anh=document.getElementById("demo");
+    let speepx=5;
+    setInterval(() =>{
+        anh.style.left=parseInt(anh.style.left)+speepx+'px'
+        if (parseInt(anh.style.left)>=window.innerWidth)
+        {anh.style.left='-250px'}
+    },10)
+</script>
